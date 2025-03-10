@@ -2,12 +2,54 @@
     ViewData["Title"] = "Оскарження штрафу ТЦК";
     string advokatinlaw = "advokatinlaw";
 }
+
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+
+
 <style>
+    .rounded-6 {
+        border-radius: .6rem !important
+    }
+
+    .square {
+        width: 50px; /* Ширина квадрата */
+        height: 50px; /* Высота квадрата */
+        background-color: #39B54A; /* Цвет квадрата */
+        border-radius: 5px; /* Закруглённые углы, если нужно */
+        margin-right: 10px; /* Отступ между квадратом и текстом */
+    }
+
+    .message {
+        background-color: #000; /* Черный фон для сообщения */
+        color: #fff; /* Белый цвет текста */
+        padding: 15px; /* Отступ внутри блока сообщения */
+        border-radius: 5px; /* Закруглённые углы для сообщения */
+        font-family: Arial, sans-serif; /* Шрифт текста */
+    }
+
+    .vignette {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+        .vignette::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.75) 100%);
+            pointer-events: none; /* Чтобы не блокировать интерактивность родителя */
+        }
+
     .bg-gray-50{
         background-color: gray !important;
     }
     body {
-        font-family: Arial, sans-serif;
+        font-family: 'Unbounded', sans-serif; */
         margin: 0;
         padding: 0;
         background-color: #ffffff;
@@ -117,23 +159,24 @@
 Ми допоможемо вам оскаржити його законним шляхом!">
 <meta property="og:image" content="">
 <meta property="og:type" content="article">
+
 <p class="text-center fs-4 fw-bold">Для кого ця інформація може бути важливою</p>
 <div class="row justify-content-around">
     <div class="card border-0 col-md-3">
         <div class="card-body mx-auto align-content-center row" style="width: 240px !important">
-            <p class="text-center text-blue m-0 p-0" style="height: 210px !important; width:240px !important">
-                <img src="~/source/helmet.png" class="" style="max-width: 120px" /><br /><b class="fw-bold fs-6 text-nowrap">Військово-зобов'язаним,</b><br /><b class="fw-bold fs-6">які отримали<br />штраф від ТЦК.</b>
+            <p class="text-center text-blue m-0 p-0" style="height: 210px !important; width:240px !important; line-height: 20px">
+                <img src="~/source/military-hat.png" class="mb-3" style="max-width: 120px" /><br /><b class="fw-bold fs-6 text-nowrap">Військово-зобов'язаним,</b><br /><b class="fw-bold fs-6">які отримали<br />штраф від ТЦК.</b>
             </p>
                 <hr />
             <p class="m-0 p-0 text-center">
-                Хочете оскаржити штраф, але не знаєте з чого почати?
+                Хочете оскаржити штраф, <b class="fw-normal text-nowrap">але не знаєте з чого почати?</b>
             </p>
         </div>
     </div>
     <div class="card border-0 col-md-3">
         <div class="card-body mx-auto align-content-center row" style="width: 240px !important">
-            <p class="text-center text-blue m-0 p-0 fw-bold fs-5" style="height: 210px !important; width:240px !important">
-                <img src="~/source/scale.png" class="" style="max-width: 120px" /><br /><b class="fw-bold fs-6 text-nowrap">Призовникам,</b><br /><b class="fw-bold fs-6">які вважають штраф незаконним.</b>
+            <p class="text-center text-blue m-0 p-0 fw-bold fs-5 " style="height: 210px !important; width:240px !important; line-height: 20px">
+                <img src="~/source/scale.png" class="mb-3" style="max-width: 120px" /><br /><b class="fw-bold fs-6 text-nowrap">Призовникам,</b><br /><b class="fw-bold fs-6">які вважають штраф незаконним.</b>
             </p>
             <hr />
             <p class="m-0 p-0 text-center">
@@ -143,8 +186,8 @@
     </div>
     <div class="card border-0 col-md-3">
         <div class="card-body mx-auto align-content-center row" style="width: 240px !important">
-            <p class="text-center text-blue m-0 p-0 fw-bold fs-5" style="height: 210px !important; width:240px !important">
-                <img src="~/source/shield.png" class="" style="max-width: 120px" /><br /><b class="fw-bold fs-6 text-nowrap">Всім, хто хоче</b><br /><b class="fw-bold fs-6">захистити свої права у відносинах з ТЦК.</b>
+            <p class="text-center text-blue m-0 p-0 fw-bold fs-5" style="height: 210px !important; width:240px !important;line-height: 20px">
+                <img src="~/source/shield (1).png" class="mb-3" style="max-width: 120px" /><br /><b class="fw-bold fs-6 text-nowrap">Всім, хто хоче</b><br /><b class="fw-bold fs-6">захистити свої права у відносинах з ТЦК.</b>
             </p>
             <hr class="mx-auto" />
             <p class="m-0 p-0 text-center">
@@ -233,80 +276,240 @@
     </div>
 </div>
 
-<div class="w-100 mt-2">
+<div class="w-100 mt-2 px-5 row justify-content-start">
     <p class="text-center fs-4 fw-bold">Що ви отримаєте в результаті</p>
-
     <div class="col-12">
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-start align-content-end align-items-end">
             <img src="~/source/rich-man.png" class="my-2 p-0 me-2" style="max-width: 80px" />
             <b class="m-0 p-0 fs-5 fw-bold border-bottom align-content-end mb-3">
                Зрозумієте, чи є підстави для оскарження вашого штрафу.
             </b>
+            <img src="~/source/check.png" class="my-2 p-0 ms-2 float-end ms-auto" style="max-width: 50px; max-height: 50px" />
         </div>
     </div>
     <div class="col-12">
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-start align-content-end align-items-end">
             <img src="~/source/list.png" class="my-2 p-0 me-2" style="max-width: 80px" />
             <b class="m-0 p-0 fs-5 fw-bold border-bottom align-content-end mb-3">
-               Зрозумієте, чи є підстави для оскарження вашого штрафу.
+                Отримаєте чіткий план дій для оскарження.
             </b>
+            <img src="~/source/check.png" class="my-2 p-0 ms-2 ms-auto" style="max-width: 50px; max-height: 50px" />
         </div>
     </div>
     <div class="col-12">
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-start align-content-end align-items-end">
             <img src="~/source/shield (1).png" class="my-2 p-0 me-2" style="max-width: 80px" />
             <b class="m-0 p-0 fs-5 fw-bold border-bottom align-content-end mb-3">
-                Зрозумієте, чи є підстави для оскарження вашого штрафу.
+                Зможете захистити свої права та уникнути незаконних стягнень.
             </b>
+            <img src="~/source/check.png" class="my-2 p-0 ms-2 float-end ms-auto" style="max-width: 50px; max-height: 50px" />
         </div>
     </div>
     <div class="col-12">
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-start align-content-end align-items-end">
+            <img src="~/source/rocket.png" class="my-2 p-0 me-2" style="max-width: 80px" />
+            <b class="m-0 p-0 fs-5 fw-bold border-bottom align-content-end mb-3">
+                Впевненість у своїх діях.
+            </b>
+            <img src="~/source/check.png" class="my-2 p-0 ms-2 float-end ms-auto" style="max-width: 50px; max-height: 50px" />
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="d-flex justify-content-start align-content-end align-items-end">
+            <img src="~/source/protest.png" class="my-2 p-0 me-2" style="max-width: 80px" />
+            <b class="m-0 p-0 fs-5 fw-bold border-bottom align-content-end mb-3">
+                Відновлення справедливості.
+            </b>
+            <img src="~/source/check.png" class="my-2 p-0 ms-2 float-end ms-auto" style="max-width: 50px; max-height: 50px" />
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="d-flex justify-content-start align-content-end align-items-end">
             <img src="~/source/money-bag.png" class="my-2 p-0 me-2" style="max-width: 80px" />
             <b class="m-0 p-0 fs-5 fw-bold border-bottom align-content-end mb-3">
-                Зрозумієте, чи є підстави для оскарження вашого штрафу.
+                Збережете свої гроші та час.
             </b>
+            <img src="~/source/check.png" class="my-2 p-0 ms-2 float-end ms-auto" style="max-width: 50px; max-height: 50px" />
         </div>
     </div>
 
 </div>
 
-<div class="mt-5">
-    <section class="section mb-3">
-        <h2>Чому саме ми?</h2>
-    </section>
-    <p>Наш досвідчений адвокат Дмитро спеціалізується на питаннях адміністративного права і готовий надати професійну підтримку в оскарженні штрафів за неявку по повістці. Чому важливо обрати саме нас?</p>
-    <ul>
-        <li><strong>Досвід та професіоналізм:</strong> Дмитро має багаторічний досвід у сфері права і успішно вирішив безліч справ, пов'язаних з оскарженням штрафів.</li>
-        <li><strong>Індивідуальний підхід:</strong> Ми зрозуміємо вашу унікальну ситуацію та підберемо оптимальні рішення для вашої справи.</li>
-        <li><strong>Комплексна підтримка:</strong> Від первинної консультації до супроводу в суді — ми знаходимося з вами на кожному кроці.</li>
-    </ul>
+<div class="w-100 mt-4">
+    <p class="fs-4 fw-bold text-center">Реальні кейси</p>
+    <div class="row justify-content-around">
+        <div class="col-12 col-md-6">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1_wrWBuaZ4o?si=jbvPYrK-TELTzWwJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
 </div>
-<div class="mt-5">
-    <section class="section mb-3">
-        <h2>Ваші права</h2>
-    </section>
 
-    <p>Нагадаємо, що в Україні кожен громадянин має право оскаржити штраф за неявку по повістці. Ви можете захистити свої інтереси, якщо вам виставили штраф, але ви мали об'єктивні причини для неявки. Причини для неявки можуть бути різноманітними, і ми допоможемо вам обґрунтувати їх документально.</p>
-    <p>Ось деякі з підстав, які можуть бути прийняті до уваги:</p>
-    <ul>
-        <li><strong>Медичні обставини:</strong> Якщо ви мали серйозні проблеми зі здоров'ям або лікування, яке перешкоджало вашій явці, ви зможете навести довідки від лікаря чи медичні документи.</li>
-        <li><strong>Відсутність за кордоном:</strong> Якщо ваше перебування за межами країни було легальним, прикріпіть документи, що підтверджують цей факт, наприклад, візи, проїзні квитки, або довідки.</li>
-        <li><strong>Сімейні обставини:</strong> Ситуації, пов’язані з крайніми обставинами в родині, такими як смерть або серйозне захворювання близького родича, також можуть бути підставою для оскарження.</li>
-        <li><strong>Проблеми з комунікацією:</strong> Якщо ви не отримали повістку вчасно або вона була відправлена на неправильну адресу, це теж дає вам підстави оскаржити штраф.</li>
-    </ul>
+<div class="w-100 mt-4 row justify-content-start px-5">
+    <p class="text-center fw-bold fs-4">
+        Чому саме ми?
+    </p>
+
+    <div class="col-12">
+        <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
+            <img src="~/source/medal.png" class="my-2 p-0 me-2" style="max-width: 80px" />
+            <div class="row m-0 p-0">
+                <p class="m-0 p-0 fs-5 fw-bold">
+                    Досвід та професіоналізм
+                </p>
+                <p class="p-0 fs-6 ">
+                    Ми маємо багаторічний досвід у сфері права і успішно вирішуємо безліч справ, пов'язаних з оскарженням штрафів.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
+            <img src="~/source/target.png" class="my-2 p-0 me-2" style="max-width: 80px" />
+            <div class="row m-0 p-0">
+                <p class="m-0 p-0 fs-5 fw-bold">
+                    Індивідуальний підхід
+                </p>
+                <p class="p-0 fs-6 ">
+                    Ми зрозуміємо вашу унікальну ситуацію та підберемо оптимальні рішення для вашої справи.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="d-flex justify-content-start align-content-end align-items-end">
+            <img src="~/source/handshake.png" class="my-2 p-0 me-2" style="max-width: 80px" />
+            <div class="row m-0 p-0">
+                <p class="m-0 p-0 fs-5 fw-bold">
+                    Комплексна підтримка
+                </p>
+                <p class="p-0 fs-6 ">
+                    Від первинної консультації до супроводу в суді — ми знаходимося з вами на кожному кроці.
+                </p>
+            </div>
+        </div>
+    </div>
+
 </div>
-<div class="mt-5">
-    <section class="section mb-3">
-        <h2>Кроки до оскарження</h2>
-    </section>
-    <p>Оскарження штрафу — це процес, який вимагає певних дій з вашого боку. Для цього ми рекомендуємо дотримуватися наступних кроків:</p>
-    <ol>
-        <li><strong>Збір доказів.</strong> Найважливішим етапом є підготовка документів, які підтверджують вашу позицію. Включайте всі наявні медичні довідки, документи про виїзди, свідчення інших людей.</li>
-        <li><strong>Підготовка та подача апеляційної скарги.</strong> На цьому етапі наша команда з адвокатом підготують всі необхідні документи для подачі скарги в орган, який наклав штраф. Важливо чітко і структуровано викласти вашу позицію, щоб звернення було розглянуто належним чином.</li>
-        <li><strong>Розгляд скарги органами.</strong> Після подачі скарги, ваша справа буде розглянута відповідними органами. Ми будемо тримати вас у курсі усіх етапів розгляду, щоб ви знали, чого чекати.</li>
-        <li><strong>Очікування рішення.</strong> Ви отримаєте офіційний лист з відповіддю на вашу скаргу. У разі відхилення, не хвилюйтеся! Ви можете звернутися до суду для подальшого оскарження.</li>
-    </ol>
+
+<div class="w-100 mt-4 row justify-content-start px-5">
+    <p class="text-center fw-bold fs-4">
+        Ваші права
+    </p>
+    <p class="text-center fs-6">В Україні кожен громадянин має право оскаржити штраф за неявку по повістці. Якщо штраф виставлено незаконно або ви маєте обґрунтовані причини для неявки, ми допоможемо вам відстояти свої права.</p>
+
+    <div class="col-12">
+        <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
+            <img src="~/source/hospital.png" class="my-2 p-0 me-2" style="max-width: 80px" />
+            <div class="row m-0 p-0">
+                <p class="m-0 p-0 fs-5 fw-bold">
+                    Медичні обставини
+                </p>
+                <p class="p-0 fs-6 ">
+                    Серйозні проблеми зі здоров'ям або лікування можуть бути причиною неявки. Медичні довідки та документи підтвердять цей факт.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
+            <img src="~/source/airplane.png" class="my-2 p-0 me-2" style="max-width: 80px" />
+            <div class="row m-0 p-0">
+                <p class="m-0 p-0 fs-5 fw-bold">
+                    Відсутність за кордоном
+                </p>
+                <p class="p-0 fs-6 ">
+                    Якщо ваше перебування за межами країни було легальним, необхідно надати відповідні документи (візи, проїзні квитки тощо).
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
+            <img src="~/source/family.png" class="my-2 p-0 me-2" style="max-width: 80px" />
+            <div class="row m-0 p-0">
+                <p class="m-0 p-0 fs-5 fw-bold">
+                    Сімейні обставини
+                </p>
+                <p class="p-0 fs-6 ">
+                    Екстрені ситуації в родині (смерть чи важка хвороба близького родича) можуть бути вагомою причиною для оскарження штрафу.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="d-flex justify-content-start align-content-end align-items-end">
+            <img src="~/source/mailbox.png" class="my-2 p-0 me-2" style="max-width: 80px" />
+            <div class="row m-0 p-0">
+                <p class="m-0 p-0 fs-5 fw-bold">
+                    Проблеми з комунікацією
+                </p>
+                <p class="p-0 fs-6 ">
+                    Якщо повістка не була отримана вчасно або надійшла на неправильну адресу, це також є підставою для скасування штрафу.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="w-100 mt-4 row justify-content-start px-5">
+    <p class="text-center fw-bold fs-4">
+        Кроки до оскарження
+    </p>
+    <p class="text-center fs-6">Оскарження штрафу — це процес, який потребує чітких дій. Ми рекомендуємо дотримуватися наступних кроків:</p>
+
+    <div class="col-12">
+        <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
+            <img src="~/source/folder(1).png" class="my-2 p-0 me-3" style="max-width: 80px" />
+            <div class="row m-0 p-0">
+                <p class="m-0 p-0 fs-5 fw-bold">
+                    Збір доказів
+                </p>
+                <p class="p-0 fs-6 ">
+                    Підготовка всіх документів, що підтверджують вашу позицію: медичні довідки, підтвердження виїзду, письмові свідчення.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
+            <img src="~/source/list.png" class="my-2 p-0 me-3" style="max-width: 80px" />
+            <div class="row m-0 p-0">
+                <p class="m-0 p-0 fs-5 fw-bold">
+                    Підготовка та подача апеляційної скарги
+                </p>
+                <p class="p-0 fs-6 ">
+                    Наша команда з адвокатом розробить необхідну документацію для подання скарги в орган, який наклав штраф.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
+            <img src="~/source/loupe.png" class="my-2 p-0 me-3" style="max-width: 80px" />
+            <div class="row m-0 p-0">
+                <p class="m-0 p-0 fs-5 fw-bold">
+                    Розгляд скарги органами
+                </p>
+                <p class="p-0 fs-6 ">
+                    Ваша справа буде розглянута відповідними органами, і ми триматимемо вас у курсі всіх етапів процесу.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="d-flex justify-content-start align-content-end align-items-end">
+            <img src="~/source/scale.png" class="my-2 p-0 me-3" style="max-width: 80px" />
+            <div class="row m-0 p-0">
+                <p class="m-0 p-0 fs-5 fw-bold">
+                    Очікування рішення
+                </p>
+                <p class="p-0 fs-6 ">
+                    У разі відхилення скарги, ви маєте можливість звернутися до суду для подальшого оскарження.
+                </p>
+            </div>
+        </div>
+    </div>
+
 </div>
 <div class="mt-5">
     <section class="section mb-3">
@@ -324,7 +527,6 @@
 
 </div>
 <div class="d-flex justify-content-around">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/1_wrWBuaZ4o?si=jbvPYrK-TELTzWwJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 @* <div class="section" id="consultation">
     <h2>Безкоштовна консультація</h2>
