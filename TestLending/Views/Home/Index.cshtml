@@ -1,153 +1,11 @@
 ﻿@{
     ViewData["Title"] = "Оскарження штрафу ТЦК";
-    string advokatinlaw = "advokatinlaw";
+    // string advokatinlaw = "advokatinlaw";
 }
 
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="~/css/landing-page.css" />
 
-
-<style>
-    .rounded-6 {
-        border-radius: .6rem !important
-    }
-
-    .square {
-        width: 50px; /* Ширина квадрата */
-        height: 50px; /* Высота квадрата */
-        background-color: #39B54A; /* Цвет квадрата */
-        border-radius: 5px; /* Закруглённые углы, если нужно */
-        margin-right: 10px; /* Отступ между квадратом и текстом */
-    }
-
-    .message {
-        background-color: #000; /* Черный фон для сообщения */
-        color: #fff; /* Белый цвет текста */
-        padding: 15px; /* Отступ внутри блока сообщения */
-        border-radius: 5px; /* Закруглённые углы для сообщения */
-        font-family: Arial, sans-serif; /* Шрифт текста */
-    }
-
-    .vignette {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
-
-        .vignette::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.75) 100%);
-            pointer-events: none; /* Чтобы не блокировать интерактивность родителя */
-        }
-
-    .bg-gray-50{
-        background-color: gray !important;
-    }
-    body {
-        font-family: 'Unbounded', sans-serif; */
-        margin: 0;
-        padding: 0;
-        background-color: #ffffff;
-        color: #033d5a;
-    }
-    .cursor-pointer:hover {
-        cursor: pointer;
-    }
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-
-    header {
-        background-color: #033d5a;
-        color: #ffffff;
-        text-align: center;
-        padding: 20px;
-    }
-
-    h1 {
-        margin: 0;
-    }
-
-    .bg-gold {
-        background-color: #d7af57 !important;
-    }
-
-    .bg-blue {
-        background-color: #033d5a !important;
-    }
-    .bg-blue-50 {
-
-    }
-    .text-gold {
-        color: #d7af57 !important
-    }
-
-    .text-blue {
-        color: #033d5a !important
-    }
-
-    .hero {
-        background-color: #d7af57;
-        color: #033d5a;
-        text-align: center;
-        padding: 40px 20px;
-    }
-
-    .btn {
-        display: inline-block;
-        background-color: #033d5a;
-        color: #ffffff;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-        font-size: 18px;
-    }
-
-    .btn:hover {
-        background-color: #022c44;
-        color: #ffffff !important
-    }
-
-    .section {
-        text-align: center;
-    }
-
-    .footerr {
-        background-color: #033d5a;
-        color: #ffffff;
-        text-align: center;
-    }
-    .h-60 {
-        line-height: 60px;
-    }
-    .millitary-back {
-        background-color: gray !important;
-        background-image: url(source/Ukrainian_military_vehicle_pixel_camouflage,_2016_pattern.svg.png);
-        background-size: 100px 100px;
-    }
-    .opacity-03{
-        opacity: .3 !important;
-    }
-
-    .link-secondary{
-        color: white !important;
-        transition: .3s ease;
-    }
-    .link-secondary:hover {
-        color: #6c757d !important;
-        transition: .3s ease;
-    }
-    .pencil {
-        list-style: url(C:\Users\DimZay\Documents\Code\C#\TestLending\TestLending\wwwroot\source\)
-    }
-</style>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
@@ -161,21 +19,21 @@
 <meta property="og:type" content="article">
 
 <p class="text-center fs-4 fw-bold">Для кого ця інформація може бути важливою</p>
-<div class="row justify-content-around">
-    <div class="card border-0 col-md-3">
-        <div class="card-body mx-auto align-content-center row" style="width: 240px !important">
-            <p class="text-center text-blue m-0 p-0" style="height: 210px !important; width:240px !important; line-height: 20px">
+<div class="card-container">
+    <div class="card-item border-0">
+        <div class="card-body mx-auto align-content-center row" style="width: 100%">
+            <p class="text-center text-blue m-0 p-0" style="height: 210px; line-height: 20px">
                 <img src="~/source/military-hat.png" class="mb-3" style="max-width: 120px" /><br /><b class="fw-bold fs-6 text-nowrap">Військово-зобов'язаним,</b><br /><b class="fw-bold fs-6">які отримали<br />штраф від ТЦК.</b>
             </p>
-                <hr />
+            <hr />
             <p class="m-0 p-0 text-center">
                 Хочете оскаржити штраф, <b class="fw-normal text-nowrap">але не знаєте з чого почати?</b>
             </p>
         </div>
     </div>
-    <div class="card border-0 col-md-3">
-        <div class="card-body mx-auto align-content-center row" style="width: 240px !important">
-            <p class="text-center text-blue m-0 p-0 fw-bold fs-5 " style="height: 210px !important; width:240px !important; line-height: 20px">
+    <div class="card-item border-0">
+        <div class="card-body mx-auto align-content-center row" style="width: 100%">
+            <p class="text-center text-blue m-0 p-0 fw-bold fs-5" style="height: 210px; line-height: 20px">
                 <img src="~/source/scale.png" class="mb-3" style="max-width: 120px" /><br /><b class="fw-bold fs-6 text-nowrap">Призовникам,</b><br /><b class="fw-bold fs-6">які вважають штраф незаконним.</b>
             </p>
             <hr />
@@ -184,9 +42,9 @@
             </p>
         </div>
     </div>
-    <div class="card border-0 col-md-3">
-        <div class="card-body mx-auto align-content-center row" style="width: 240px !important">
-            <p class="text-center text-blue m-0 p-0 fw-bold fs-5" style="height: 210px !important; width:240px !important;line-height: 20px">
+    <div class="card-item border-0">
+        <div class="card-body mx-auto align-content-center row" style="width: 100%">
+            <p class="text-center text-blue m-0 p-0 fw-bold fs-5" style="height: 210px; line-height: 20px">
                 <img src="~/source/shield (1).png" class="mb-3" style="max-width: 120px" /><br /><b class="fw-bold fs-6 text-nowrap">Всім, хто хоче</b><br /><b class="fw-bold fs-6">захистити свої права у відносинах з ТЦК.</b>
             </p>
             <hr class="mx-auto" />
@@ -196,150 +54,129 @@
         </div>
     </div>
 </div>
+
 <div class="w-100 millitary-back bg-secondary my-3 rounded">
     <div class="w-100 bg-dark-transparent rounded">
-        <div class="row justify-content-center m-0 p-0 opacity-100 pt-4">
-            <div class="col-5 col-md-4 col-lg-2   justify-content-center text-center rounded border-1 p-1 m-2 ">
-                <div class="bg-light rounded w-100 h-100 align-content-start justify-content-center row m-0 p-0">
-                    <img src="~/source/scroll.png" class="mx-auto my-2 p-0" style="max-width: 50px" />
-                    <br />
+        <div class="card-container pt-4">
+            <div class="card-item bg-light rounded">
+                <div class="d-flex flex-column align-items-center p-3 h-100">
+                    <img src="~/source/scroll.png" class="my-2" style="max-width: 50px" />
                     <p class="text-center text-blue fw-bold">Підстави для оскарження штрафу ТЦК.</p>
                 </div>
             </div>
-            <div class="col-5 col-md-4 col-lg-2   justify-content-center text-center rounded border-1 p-1 m-2">
-                <div class="bg-light rounded w-100 h-100 align-content-start justify-content-center row m-0 p-0">
-                    <img src="~/source/government.png" class="mx-auto my-2 p-0" style="max-width: 50px" />
-                    <br />
+            <div class="card-item bg-light rounded">
+                <div class="d-flex flex-column align-items-center p-3 h-100">
+                    <img src="~/source/government.png" class="my-2" style="max-width: 50px" />
                     <p class="text-center text-blue fw-bold">Порядок оскарження штрафу.</p>
                 </div>
             </div>
-            <div class="col-5 col-md-4 col-lg-2   justify-content-center text-center rounded border-1 p-1 m-2">
-                <div class="bg-light rounded w-100 h-100 align-content-start justify-content-center row m-0 p-0">
-                    <img src="~/source/folder.png" class="mx-auto my-2 p-0" style="max-width: 50px" />
-                    <br />
-                    <p class="text-center text-blue fw-bold m-0 p-0">Необхідні документи для оскарження.</p>
+            <div class="card-item bg-light rounded">
+                <div class="d-flex flex-column align-items-center p-3 h-100">
+                    <img src="~/source/folder.png" class="my-2" style="max-width: 50px" />
+                    <p class="text-center text-blue fw-bold">Необхідні документи для оскарження.</p>
                 </div>
             </div>
-            <div class="col-5 col-md-4 col-lg-2   justify-content-center text-center rounded border-1 p-1 m-2">
-                <div class="bg-light rounded w-100 h-100 align-content-start justify-content-center row m-0 p-0">
-                    <img src="~/source/balance (1).png" class="mx-auto my-2 p-0" style="max-width: 50px" />
-                    <br />
-                    <p class="text-center text-blue fw-bold m-0 p-0">Ваші права та як їх захистити.</p>
-                </div>
-            </div>
-            <div class="col-5 col-md-4 col-lg-2   justify-content-center text-center rounded border-1 p-1 m-2">
-                <div class="bg-light rounded w-100 h-100 align-content-start justify-content-center row m-0 p-0">
-                    <img src="~/source/warning.png" class="mx-auto my-2 p-0" style="max-width: 50px" />
-                    <br />
-                    <p class="text-center text-blue fw-bold">Типові помилки при оскарженні та як їх уникнути.</p>
-                </div>
-            </div>
-            <div class="col-5 col-md-4 col-lg-2   justify-content-center text-center rounded border-1 p-1 m-2">
-                <div class="bg-light rounded w-100 h-100 align-content-start justify-content-center row m-0 p-0">
-                    <img src="~/source/writing.png" class="mx-auto my-2 p-0" style="max-width: 50px" />
-                    <br />
-                    <p class="text-center text-blue fw-bold">Як правильно скласти скаргу.</p>
-                </div>
-            </div>
-            <div class="col-5 col-md-4 col-lg-2   justify-content-center text-center rounded border-1 p-1 m-2">
-                <div class="bg-light rounded w-100 h-100 align-content-start justify-content-center row m-0 p-0">
-                    <img src="~/source/cam.png" class="mx-auto my-2 p-0" style="max-width: 50px" />
-                    <br />
+            <div class="card-item bg-light rounded">
+                <div class="d-flex flex-column align-items-center p-3 h-100">
+                    <img src="~/source/cam.png" class="my-2" style="max-width: 50px" />
                     <p class="text-center text-blue fw-bold">Як зібрати необхідні докази.</p>
                 </div>
             </div>
-            <div class="col-5 col-md-4 col-lg-2   justify-content-center text-center rounded border-1 p-1 m-2">
-                <div class="bg-light rounded w-100 h-100 align-content-start justify-content-center row m-0 p-0">
-                    <img src="~/source/speak.png" class="mx-auto my-2 p-0" style="max-width: 50px" />
-                    <br />
+            <div class="card-item bg-light rounded">
+                <div class="d-flex flex-column align-items-center p-3 h-100">
+                    <img src="~/source/speak.png" class="my-2" style="max-width: 50px" />
                     <p class="text-center text-blue fw-bold">Як поводитися під час розгляду скарги.</p>
                 </div>
             </div>
-            <div class="col-5 col-md-4 col-lg-2   justify-content-center text-center rounded border-1 p-1 m-2">
-                <div class="bg-light rounded w-100 h-100 align-content-start justify-content-center row m-0 p-0">
-                    <img src="~/source/return.png" class="mx-auto my-2 p-0" style="max-width: 50px" />
-                    <br />
+            <div class="card-item bg-light rounded">
+                <div class="d-flex flex-column align-items-center p-3 h-100">
+                    <img src="~/source/return.png" class="my-2" style="max-width: 50px" />
                     <p class="text-center text-blue fw-bold">Що робити, якщо вашу скаргу відхилили.</p>
                 </div>
             </div>
-           @*  <div class="col-5 col-md-4 col-lg-2 justify-content-center text-center rounded border-1 p-1 m-2">
-            </div> *@
         </div>
 
-        <div class="text-center  my-5 py-5">
-            <div class=" bg-gold text-blue">
+        <div class="text-center my-5 py-5">
+            <div class="bg-gold text-blue">
                 <h2>Отримали штраф за неявку по повістці?</h2>
                 <p>Ми допоможемо вам оскаржити його законним шляхом!</p>
             </div>
-            <a href="tel:+380675490959" class="btn">Замовити оскарження</a>
+            <a href="#" class="btn text-white" data-bs-toggle="modal" data-bs-target="#orderFormModal">Замовити оскарження</a>
         </div>
     </div>
 </div>
 
-<div class="w-100 mt-2 px-5 row justify-content-start">
+<div class="section-responsive mt-4">
     <p class="text-center fs-4 fw-bold">Що ви отримаєте в результаті</p>
-    <div class="col-12">
-        <div class="d-flex justify-content-start align-content-end align-items-end">
-            <img src="~/source/rich-man.png" class="my-2 p-0 me-2" style="max-width: 80px" />
-            <b class="m-0 p-0 fs-5 fw-bold border-bottom align-content-end mb-3">
-               Зрозумієте, чи є підстави для оскарження вашого штрафу.
-            </b>
-            <img src="~/source/check.png" class="my-2 p-0 ms-2 float-end ms-auto" style="max-width: 50px; max-height: 50px" />
+    
+    <div class="w-100">
+        <div class="feature-box">
+            <div class="feature-image">
+                <img src="~/source/rich-man.png" style="max-width: 80px" />
+            </div>
+            <div class="feature-content">
+                <p class="fs-5 fw-bold mb-2">Зрозумієте, чи є підстави для оскарження вашого штрафу.</p>
+            </div>
+            <img src="~/source/check.png" class="ms-auto" style="max-width: 50px; max-height: 50px" />
         </div>
-    </div>
-    <div class="col-12">
-        <div class="d-flex justify-content-start align-content-end align-items-end">
-            <img src="~/source/list.png" class="my-2 p-0 me-2" style="max-width: 80px" />
-            <b class="m-0 p-0 fs-5 fw-bold border-bottom align-content-end mb-3">
-                Отримаєте чіткий план дій для оскарження.
-            </b>
-            <img src="~/source/check.png" class="my-2 p-0 ms-2 ms-auto" style="max-width: 50px; max-height: 50px" />
+        
+        <div class="feature-box">
+            <div class="feature-image">
+                <img src="~/source/list.png" style="max-width: 80px" />
+            </div>
+            <div class="feature-content">
+                <p class="fs-5 fw-bold mb-2">Отримаєте чіткий план дій для оскарження.</p>
+            </div>
+            <img src="~/source/check.png" class="ms-auto" style="max-width: 50px; max-height: 50px" />
         </div>
-    </div>
-    <div class="col-12">
-        <div class="d-flex justify-content-start align-content-end align-items-end">
-            <img src="~/source/shield (1).png" class="my-2 p-0 me-2" style="max-width: 80px" />
-            <b class="m-0 p-0 fs-5 fw-bold border-bottom align-content-end mb-3">
-                Зможете захистити свої права та уникнути незаконних стягнень.
-            </b>
-            <img src="~/source/check.png" class="my-2 p-0 ms-2 float-end ms-auto" style="max-width: 50px; max-height: 50px" />
-        </div>
-    </div>
-    <div class="col-12">
-        <div class="d-flex justify-content-start align-content-end align-items-end">
-            <img src="~/source/rocket.png" class="my-2 p-0 me-2" style="max-width: 80px" />
-            <b class="m-0 p-0 fs-5 fw-bold border-bottom align-content-end mb-3">
-                Впевненість у своїх діях.
-            </b>
-            <img src="~/source/check.png" class="my-2 p-0 ms-2 float-end ms-auto" style="max-width: 50px; max-height: 50px" />
-        </div>
-    </div>
-    <div class="col-12">
-        <div class="d-flex justify-content-start align-content-end align-items-end">
-            <img src="~/source/protest.png" class="my-2 p-0 me-2" style="max-width: 80px" />
-            <b class="m-0 p-0 fs-5 fw-bold border-bottom align-content-end mb-3">
-                Відновлення справедливості.
-            </b>
-            <img src="~/source/check.png" class="my-2 p-0 ms-2 float-end ms-auto" style="max-width: 50px; max-height: 50px" />
-        </div>
-    </div>
-    <div class="col-12">
-        <div class="d-flex justify-content-start align-content-end align-items-end">
-            <img src="~/source/money-bag.png" class="my-2 p-0 me-2" style="max-width: 80px" />
-            <b class="m-0 p-0 fs-5 fw-bold border-bottom align-content-end mb-3">
-                Збережете свої гроші та час.
-            </b>
-            <img src="~/source/check.png" class="my-2 p-0 ms-2 float-end ms-auto" style="max-width: 50px; max-height: 50px" />
-        </div>
-    </div>
 
+        <div class="feature-box">
+            <div class="feature-image">
+                <img src="~/source/shield (1).png" style="max-width: 80px" />
+            </div>
+            <div class="feature-content">
+                <p class="fs-5 fw-bold mb-2">Зможете захистити свої права та уникнути незаконних стягнень.</p>
+            </div>
+            <img src="~/source/check.png" class="ms-auto" style="max-width: 50px; max-height: 50px" />
+        </div>
+
+        <div class="feature-box">
+            <div class="feature-image">
+                <img src="~/source/rocket.png" style="max-width: 80px" />
+            </div>
+            <div class="feature-content">
+                <p class="fs-5 fw-bold mb-2">Впевненість у своїх діях.</p>
+            </div>
+            <img src="~/source/check.png" class="ms-auto" style="max-width: 50px; max-height: 50px" />
+        </div>
+
+        <div class="feature-box">
+            <div class="feature-image">
+                <img src="~/source/protest.png" style="max-width: 80px" />
+            </div>
+            <div class="feature-content">
+                <p class="fs-5 fw-bold mb-2">Відновлення справедливості.</p>
+            </div>
+            <img src="~/source/check.png" class="ms-auto" style="max-width: 50px; max-height: 50px" />
+        </div>
+
+        <div class="feature-box">
+            <div class="feature-image">
+                <img src="~/source/money-bag.png" style="max-width: 80px" />
+            </div>
+            <div class="feature-content">
+                <p class="fs-5 fw-bold mb-2">Збережете свої гроші та час.</p>
+            </div>
+            <img src="~/source/check.png" class="ms-auto" style="max-width: 50px; max-height: 50px" />
+        </div>
+    </div>
 </div>
 
 <div class="w-100 mt-4">
     <p class="fs-4 fw-bold text-center">Реальні кейси</p>
-    <div class="row justify-content-around">
-        <div class="col-12 col-md-6">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/1_wrWBuaZ4o?si=jbvPYrK-TELTzWwJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/1_wrWBuaZ4o?si=jbvPYrK-TELTzWwJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div>
 </div>
@@ -351,12 +188,12 @@
 
     <div class="col-12">
         <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
-            <img src="~/source/medal.png" class="my-2 p-0 me-2" style="max-width: 80px" />
-            <div class="row m-0 p-0">
-                <p class="m-0 p-0 fs-5 fw-bold">
+            <img src="~/source/medal.png" class="my-2 п-0 me-2" style="max-width: 80px" />
+            <div class="row м-0 п-0">
+                <p class="м-0 п-0 fs-5 fw-bold">
                     Досвід та професіоналізм
                 </p>
-                <p class="p-0 fs-6 ">
+                <p class="п-0 fs-6 ">
                     Ми маємо багаторічний досвід у сфері права і успішно вирішуємо безліч справ, пов'язаних з оскарженням штрафів.
                 </p>
             </div>
@@ -364,12 +201,12 @@
     </div>
     <div class="col-12">
         <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
-            <img src="~/source/target.png" class="my-2 p-0 me-2" style="max-width: 80px" />
-            <div class="row m-0 p-0">
-                <p class="m-0 p-0 fs-5 fw-bold">
+            <img src="~/source/target.png" class="my-2 п-0 me-2" style="max-width: 80px" />
+            <div class="row м-0 п-0">
+                <p class="м-0 п-0 fs-5 fw-bold">
                     Індивідуальний підхід
                 </p>
-                <p class="p-0 fs-6 ">
+                <p class="п-0 fs-6 ">
                     Ми зрозуміємо вашу унікальну ситуацію та підберемо оптимальні рішення для вашої справи.
                 </p>
             </div>
@@ -377,12 +214,12 @@
     </div>
     <div class="col-12">
         <div class="d-flex justify-content-start align-content-end align-items-end">
-            <img src="~/source/handshake.png" class="my-2 p-0 me-2" style="max-width: 80px" />
-            <div class="row m-0 p-0">
-                <p class="m-0 p-0 fs-5 fw-bold">
+            <img src="~/source/handshake.png" class="my-2 п-0 me-2" style="max-width: 80px" />
+            <div class="row м-0 п-0">
+                <p class="м-0 п-0 fs-5 fw-bold">
                     Комплексна підтримка
                 </p>
-                <p class="p-0 fs-6 ">
+                <p class="п-0 fs-6 ">
                     Від первинної консультації до супроводу в суді — ми знаходимося з вами на кожному кроці.
                 </p>
             </div>
@@ -399,12 +236,12 @@
 
     <div class="col-12">
         <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
-            <img src="~/source/hospital.png" class="my-2 p-0 me-2" style="max-width: 80px" />
-            <div class="row m-0 p-0">
-                <p class="m-0 p-0 fs-5 fw-bold">
+            <img src="~/source/hospital.png" class="my-2 п-0 me-2" style="max-width: 80px" />
+            <div class="row м-0 п-0">
+                <p class="м-0 п-0 fs-5 fw-bold">
                     Медичні обставини
                 </p>
-                <p class="p-0 fs-6 ">
+                <p class="п-0 fs-6 ">
                     Серйозні проблеми зі здоров'ям або лікування можуть бути причиною неявки. Медичні довідки та документи підтвердять цей факт.
                 </p>
             </div>
@@ -412,12 +249,12 @@
     </div>
     <div class="col-12">
         <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
-            <img src="~/source/airplane.png" class="my-2 p-0 me-2" style="max-width: 80px" />
-            <div class="row m-0 p-0">
-                <p class="m-0 p-0 fs-5 fw-bold">
+            <img src="~/source/airplane.png" class="my-2 п-0 me-2" style="max-width: 80px" />
+            <div class="row м-0 п-0">
+                <p class="м-0 п-0 fs-5 fw-bold">
                     Відсутність за кордоном
                 </p>
-                <p class="p-0 fs-6 ">
+                <p class="п-0 fs-6 ">
                     Якщо ваше перебування за межами країни було легальним, необхідно надати відповідні документи (візи, проїзні квитки тощо).
                 </p>
             </div>
@@ -425,12 +262,12 @@
     </div>
     <div class="col-12">
         <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
-            <img src="~/source/family.png" class="my-2 p-0 me-2" style="max-width: 80px" />
-            <div class="row m-0 p-0">
-                <p class="m-0 p-0 fs-5 fw-bold">
+            <img src="~/source/family.png" class="my-2 п-0 me-2" style="max-width: 80px" />
+            <div class="row м-0 п-0">
+                <p class="м-0 п-0 fs-5 fw-bold">
                     Сімейні обставини
                 </p>
-                <p class="p-0 fs-6 ">
+                <p class="п-0 fs-6 ">
                     Екстрені ситуації в родині (смерть чи важка хвороба близького родича) можуть бути вагомою причиною для оскарження штрафу.
                 </p>
             </div>
@@ -438,12 +275,12 @@
     </div>
     <div class="col-12">
         <div class="d-flex justify-content-start align-content-end align-items-end">
-            <img src="~/source/mailbox.png" class="my-2 p-0 me-2" style="max-width: 80px" />
-            <div class="row m-0 p-0">
-                <p class="m-0 p-0 fs-5 fw-bold">
+            <img src="~/source/mailbox.png" class="my-2 п-0 me-2" style="max-width: 80px" />
+            <div class="row м-0 п-0">
+                <p class="м-0 п-0 fs-5 fw-bold">
                     Проблеми з комунікацією
                 </p>
-                <p class="p-0 fs-6 ">
+                <p class="п-0 fs-6 ">
                     Якщо повістка не була отримана вчасно або надійшла на неправильну адресу, це також є підставою для скасування штрафу.
                 </p>
             </div>
@@ -459,12 +296,12 @@
 
     <div class="col-12">
         <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
-            <img src="~/source/folder(1).png" class="my-2 p-0 me-3" style="max-width: 80px" />
-            <div class="row m-0 p-0">
-                <p class="m-0 p-0 fs-5 fw-bold">
+            <img src="~/source/folder(1).png" class="my-2 п-0 me-3" style="max-width: 80px" />
+            <div class="row м-0 п-0">
+                <p class="м-0 п-0 fs-5 fw-bold">
                     Збір доказів
                 </p>
-                <p class="p-0 fs-6 ">
+                <p  class="п-0 fs-6 ">
                     Підготовка всіх документів, що підтверджують вашу позицію: медичні довідки, підтвердження виїзду, письмові свідчення.
                 </p>
             </div>
@@ -472,12 +309,12 @@
     </div>
     <div class="col-12">
         <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
-            <img src="~/source/list.png" class="my-2 p-0 me-3" style="max-width: 80px" />
-            <div class="row m-0 p-0">
-                <p class="m-0 p-0 fs-5 fw-bold">
+            <img src="~/source/list.png" class="my-2 п-0 me-3" style="max-width: 80px" />
+            <div class="row м-0 п-0">
+                <p class="м-0 п-0 fs-5 fw-bold">
                     Підготовка та подача апеляційної скарги
                 </p>
-                <p class="p-0 fs-6 ">
+                <p class="п-0 fs-6 ">
                     Наша команда з адвокатом розробить необхідну документацію для подання скарги в орган, який наклав штраф.
                 </p>
             </div>
@@ -485,12 +322,12 @@
     </div>
     <div class="col-12">
         <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
-            <img src="~/source/loupe.png" class="my-2 p-0 me-3" style="max-width: 80px" />
-            <div class="row m-0 p-0">
-                <p class="m-0 p-0 fs-5 fw-bold">
+            <img src="~/source/loupe.png" class="my-2 п-0 me-3" style="max-width: 80px" />
+            <div class="row м-0 п-0">
+                <p class="м-0 п-0 fs-5 fw-bold">
                     Розгляд скарги органами
                 </p>
-                <p class="p-0 fs-6 ">
+                <p class="п-0 fs-6 ">
                     Ваша справа буде розглянута відповідними органами, і ми триматимемо вас у курсі всіх етапів процесу.
                 </p>
             </div>
@@ -498,12 +335,12 @@
     </div>
     <div class="col-12">
         <div class="d-flex justify-content-start align-content-end align-items-end">
-            <img src="~/source/scale.png" class="my-2 p-0 me-3" style="max-width: 80px" />
-            <div class="row m-0 p-0">
-                <p class="m-0 p-0 fs-5 fw-bold">
+            <img src="~/source/scale.png" class="my-2 п-0 me-3" style="max-width: 80px" />
+            <div class="row м-0 п-0">
+                <p class="м-0 п-0 fs-5 fw-bold">
                     Очікування рішення
                 </p>
-                <p class="p-0 fs-6 ">
+                <p class="п-0 fs-6 ">
                     У разі відхилення скарги, ви маєте можливість звернутися до суду для подальшого оскарження.
                 </p>
             </div>
@@ -524,20 +361,47 @@
         <li><strong>Супровід переговорів з державними органами:</strong> Можливість ведення переговорів від вашого імені для досягнення кращого результату.</li>
     </ul>
     <p>Звернувшись до нашого адвоката, ви отримаєте надійну допомогу і комфорт у вирішенні вашої правової проблеми.</p>
-
+   
 </div>
 <div class="d-flex justify-content-around">
 </div>
+<!-- Modal -->
+<div class="modal fade" id="orderFormModal" tabindex="-1" aria-labelledby="orderFormModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="orderFormModalLabel">Замовити оскарження</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="orderForm" method="post" action="/Home/SubmitOrder">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">ПІБ</label>
+                        <input type="text" class="form-control" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phoneNumber" class="form-label">Номер телефону</label>
+                        <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Відправити</button>
+                </form>
+                <div id="successMessage" class="alert alert-success mt-3" style="display: none;">
+                    Заявка відправлена!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @* <div class="section" id="consultation">
     <h2>Безкоштовна консультація</h2>
-    <p>Залиште свої контактні дані, і наш юрист зв’яжеться з вами.</p>
+    <п>Залиште свої контактні дані, і наш юрист зв’яжеться з вами.</п>
     <form>
         <input type="text" placeholder="Ваше ім'я" required>
         <input type="tel" placeholder="Ваш телефон" required>
         <button type="submit" class="btn">Надіслати</button>
     </form>
-</div> *@
-
-@* <div class="footer mt-1">
-    <p>&copy; 2025 Всі права захищені.</p>
 </div> *@

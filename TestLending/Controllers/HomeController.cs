@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using TestLending.Models;
+using Microsoft.Extensions.Logging;
 
 namespace TestLending.Controllers
 {
@@ -21,6 +22,17 @@ namespace TestLending.Controllers
         public IActionResult Privacy()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult SubmitOrder(string fullName, string phoneNumber, string email)
+        {
+            _logger.LogInformation("Заявка відправлена:");
+            _logger.LogInformation("ПІБ: {FullName}", fullName);
+            _logger.LogInformation("Номер телефону: {PhoneNumber}", phoneNumber);
+            _logger.LogInformation("Email: {Email}", email);
+
+            return Json(new { success = true });
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
