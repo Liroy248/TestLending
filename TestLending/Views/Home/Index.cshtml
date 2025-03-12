@@ -141,7 +141,7 @@
         transition: .3s ease;
     }
     .link-secondary:hover {
-        color: #6c757d !important;
+            color: #a9a9a9 !important;
         transition: .3s ease;
     }
     .pencil {
@@ -161,9 +161,43 @@
 <meta property="og:type" content="article">
 
 <p class="text-center fs-4 fw-bold">Для кого ця інформація може бути важливою</p>
-<div class="row justify-content-around">
-    <div class="card border-0 col-md-3">
-        <div class="card-body mx-auto align-content-center row" style="width: 240px !important">
+<div class="d-flex justify-content-around flex-wrap my-4">
+    <div class="my-3" style="width: 330px; min-width: 330px">
+        <p class="text-center text-blue m-0 p-0" style="">
+            <img src="~/source/military-hat.png" class="mb-3" style="max-width: 120px" />
+        </p>
+        <p class="m-0 p-0 text-center fw-bold">Призовникам,</p>
+        <p class="m-0 p-0 text-center fw-bold">які отримали<br />штраф від ТЦК.</p>
+        <hr />
+        <p class="m-0 p-0 text-center">
+            Хочете оскаржити штраф,
+        </p>
+        <p class="m-0 p-0 text-center">але не знаєте з чого почати?</p>
+    </div>
+    <div class="my-3" style="width: 330px; min-width: 330px">
+        <p class="text-center text-blue m-0 p-0" style="">
+            <img src="~/source/scale.png" class="mb-3" style="max-width: 120px" />
+        </p>
+        <p class="m-0 p-0 text-center fw-bold">Військово-зобов'язаним,</p>
+        <p class="m-0 p-0 text-center fw-bold">які вважають штраф<br /> незаконним.</p>
+        <hr />
+        <p class="m-0 p-0 text-center">
+            Не впевнені у своїх правах та обов'язках?
+        </p>
+    </div>
+    <div class="my-3" style="width: 330px; min-width: 330px">
+        <p class="text-center text-blue m-0 p-0" style="">
+            <img src="~/source/shield (1).png" class="mb-3" style="max-width: 120px" />
+        </p>
+        <p class="m-0 p-0 text-center fw-bold">Всім, хто хоче,</p>
+        <p class="m-0 p-0 text-center fw-bold">захистити свої права у відносинах з ТЦК.</p>
+        <hr />
+        <p class="m-0 p-0 text-center">
+            Боїтеся, що оскарження буде складним та дорогим?
+        </p>
+    </div>
+    @* <div class="card border-0 col-md-3 px-0">
+        <div class="card-body mx-auto align-content-center row px-0" style="width: 240px !important">
             <p class="text-center text-blue m-0 p-0" style="height: 210px !important; width:240px !important; line-height: 20px">
                 <img src="~/source/military-hat.png" class="mb-3" style="max-width: 120px" /><br /><b class="fw-bold fs-6 text-nowrap">Військово-зобов'язаним,</b><br /><b class="fw-bold fs-6">які отримали<br />штраф від ТЦК.</b>
             </p>
@@ -173,8 +207,8 @@
             </p>
         </div>
     </div>
-    <div class="card border-0 col-md-3">
-        <div class="card-body mx-auto align-content-center row" style="width: 240px !important">
+    <div class="card border-0 col-md-3 px-0">
+        <div class="card-body mx-auto align-content-center row px-0" style="width: 240px !important">
             <p class="text-center text-blue m-0 p-0 fw-bold fs-5 " style="height: 210px !important; width:240px !important; line-height: 20px">
                 <img src="~/source/scale.png" class="mb-3" style="max-width: 120px" /><br /><b class="fw-bold fs-6 text-nowrap">Призовникам,</b><br /><b class="fw-bold fs-6">які вважають штраф незаконним.</b>
             </p>
@@ -184,8 +218,8 @@
             </p>
         </div>
     </div>
-    <div class="card border-0 col-md-3">
-        <div class="card-body mx-auto align-content-center row" style="width: 240px !important">
+    <div class="card border-0 col-md-3 px-0">
+        <div class="card-body mx-auto align-content-center row px-0" style="width: 240px !important">
             <p class="text-center text-blue m-0 p-0 fw-bold fs-5" style="height: 210px !important; width:240px !important;line-height: 20px">
                 <img src="~/source/shield (1).png" class="mb-3" style="max-width: 120px" /><br /><b class="fw-bold fs-6 text-nowrap">Всім, хто хоче</b><br /><b class="fw-bold fs-6">захистити свої права у відносинах з ТЦК.</b>
             </p>
@@ -194,7 +228,7 @@
                 Боїтеся, що оскарження буде складним та дорогим?
             </p>
         </div>
-    </div>
+    </div> *@
 </div>
 <div class="w-100 millitary-back bg-secondary my-3 rounded">
     <div class="w-100 bg-dark-transparent rounded">
@@ -266,7 +300,7 @@
             </div> *@
         </div>
 
-        <div class="text-center  my-5 py-5">
+        <div class="text-center  mb-5 pb-5 mt-3 pt-3">
             <div class=" bg-gold text-blue">
                 <h2>Отримали штраф за неявку по повістці?</h2>
                 <p>Ми допоможемо вам оскаржити його законним шляхом!</p>
@@ -276,7 +310,7 @@
     </div>
 </div>
 
-<div class="w-100 mt-2 px-5 row justify-content-start">
+<div class="w-100 mt-2 px-md-5 row justify-content-start">
     <p class="text-center fs-4 fw-bold">Що ви отримаєте в результаті</p>
     <div class="col-12">
         <div class="d-flex justify-content-start align-content-end align-items-end">
@@ -338,19 +372,19 @@
 <div class="w-100 mt-4">
     <p class="fs-4 fw-bold text-center">Реальні кейси</p>
     <div class="row justify-content-around">
-        <div class="col-12 col-md-6">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/1_wrWBuaZ4o?si=jbvPYrK-TELTzWwJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="d-flex col-12 col-md-6 align-content-center align-items-center justify-content-center">
+            <iframe style="width: 560px !important;max-width: 100% !important; height: 315px !important" src="https://www.youtube.com/embed/1_wrWBuaZ4o?si=jbvPYrK-TELTzWwJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div>
 </div>
 
-<div class="w-100 mt-4 row justify-content-start px-5">
+<div class="w-100 mt-4 row justify-content-start px-md-5 px-0">
     <p class="text-center fw-bold fs-4">
         Чому саме ми?
     </p>
 
     <div class="col-12">
-        <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
+        <div class="d-flex justify-content-start align-content-end align-items-md-end align-items-start  border-bottom">
             <img src="~/source/medal.png" class="my-2 p-0 me-2" style="max-width: 80px" />
             <div class="row m-0 p-0">
                 <p class="m-0 p-0 fs-5 fw-bold">
@@ -363,7 +397,7 @@
         </div>
     </div>
     <div class="col-12">
-        <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
+        <div class="d-flex justify-content-start align-content-end align-items-md-end align-items-start border-bottom">
             <img src="~/source/target.png" class="my-2 p-0 me-2" style="max-width: 80px" />
             <div class="row m-0 p-0">
                 <p class="m-0 p-0 fs-5 fw-bold">
@@ -376,7 +410,7 @@
         </div>
     </div>
     <div class="col-12">
-        <div class="d-flex justify-content-start align-content-end align-items-end">
+        <div class="d-flex justify-content-start align-content-end align-items-md-end align-items-start">
             <img src="~/source/handshake.png" class="my-2 p-0 me-2" style="max-width: 80px" />
             <div class="row m-0 p-0">
                 <p class="m-0 p-0 fs-5 fw-bold">
@@ -391,14 +425,14 @@
 
 </div>
 
-<div class="w-100 mt-4 row justify-content-start px-5">
+<div class="w-100 mt-4 row justify-content-start px-md-5 px-0">
     <p class="text-center fw-bold fs-4">
         Ваші права
     </p>
     <p class="text-center fs-6">В Україні кожен громадянин має право оскаржити штраф за неявку по повістці. Якщо штраф виставлено незаконно або ви маєте обґрунтовані причини для неявки, ми допоможемо вам відстояти свої права.</p>
 
     <div class="col-12">
-        <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
+        <div class="d-flex justify-content-start align-content-end align-items-md-end align-items-start border-bottom">
             <img src="~/source/hospital.png" class="my-2 p-0 me-2" style="max-width: 80px" />
             <div class="row m-0 p-0">
                 <p class="m-0 p-0 fs-5 fw-bold">
@@ -411,7 +445,7 @@
         </div>
     </div>
     <div class="col-12">
-        <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
+        <div class="d-flex justify-content-start align-content-end align-items-md-end align-items-start border-bottom">
             <img src="~/source/airplane.png" class="my-2 p-0 me-2" style="max-width: 80px" />
             <div class="row m-0 p-0">
                 <p class="m-0 p-0 fs-5 fw-bold">
@@ -424,7 +458,7 @@
         </div>
     </div>
     <div class="col-12">
-        <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
+        <div class="d-flex justify-content-start align-content-end align-items-md-end align-items-start border-bottom">
             <img src="~/source/family.png" class="my-2 p-0 me-2" style="max-width: 80px" />
             <div class="row m-0 p-0">
                 <p class="m-0 p-0 fs-5 fw-bold">
@@ -437,7 +471,7 @@
         </div>
     </div>
     <div class="col-12">
-        <div class="d-flex justify-content-start align-content-end align-items-end">
+        <div class="d-flex justify-content-start align-content-end align-items-md-end align-items-start">
             <img src="~/source/mailbox.png" class="my-2 p-0 me-2" style="max-width: 80px" />
             <div class="row m-0 p-0">
                 <p class="m-0 p-0 fs-5 fw-bold">
@@ -451,14 +485,14 @@
     </div>
 
 </div>
-<div class="w-100 mt-4 row justify-content-start px-5">
+<div class="w-100 mt-4 row justify-content-start px-md-5 px-0">
     <p class="text-center fw-bold fs-4">
         Кроки до оскарження
     </p>
     <p class="text-center fs-6">Оскарження штрафу — це процес, який потребує чітких дій. Ми рекомендуємо дотримуватися наступних кроків:</p>
 
     <div class="col-12">
-        <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
+        <div class="d-flex justify-content-start align-content-end align-items-md-end align-items-start border-bottom">
             <img src="~/source/folder(1).png" class="my-2 p-0 me-3" style="max-width: 80px" />
             <div class="row m-0 p-0">
                 <p class="m-0 p-0 fs-5 fw-bold">
@@ -471,7 +505,7 @@
         </div>
     </div>
     <div class="col-12">
-        <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
+        <div class="d-flex justify-content-start align-content-end align-items-md-end align-items-start border-bottom">
             <img src="~/source/list.png" class="my-2 p-0 me-3" style="max-width: 80px" />
             <div class="row m-0 p-0">
                 <p class="m-0 p-0 fs-5 fw-bold">
@@ -484,7 +518,7 @@
         </div>
     </div>
     <div class="col-12">
-        <div class="d-flex justify-content-start align-content-end align-items-end border-bottom">
+        <div class="d-flex justify-content-start align-content-end align-items-md-end align-items-start border-bottom">
             <img src="~/source/loupe.png" class="my-2 p-0 me-3" style="max-width: 80px" />
             <div class="row m-0 p-0">
                 <p class="m-0 p-0 fs-5 fw-bold">
@@ -497,7 +531,7 @@
         </div>
     </div>
     <div class="col-12">
-        <div class="d-flex justify-content-start align-content-end align-items-end">
+        <div class="d-flex justify-content-start align-content-end align-items-md-end align-items-start">
             <img src="~/source/scale.png" class="my-2 p-0 me-3" style="max-width: 80px" />
             <div class="row m-0 p-0">
                 <p class="m-0 p-0 fs-5 fw-bold">
