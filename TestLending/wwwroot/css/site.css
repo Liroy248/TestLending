@@ -26,9 +26,10 @@ body {
 }
 
 
+
 .bg-dark-transparent {
     --bs-bg-opacity: 1;
-    background-color: #212121a8 !important;
+    background-color: #00000057 !important;
 }
 .small_image {
     max-width: 25% !important
